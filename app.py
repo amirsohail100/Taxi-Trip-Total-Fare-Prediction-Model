@@ -16,9 +16,9 @@ st.write("Predict the total fare amount based on taxi trip details")
 @st.cache_resource
 def load_model():
     """Load pre-trained KNN model and preprocessors from pkl files"""
-    model = load("KNN_model.pkl")
-    scaler = load("scaler.pkl")
-    columns = load("columns.pkl")
+    model = load("models/KNN_model.pkl")
+    scaler = load("models/scaler.pkl")
+    columns = load("models/columns.pkl")
     
     # Create a label encoder for taxi colors
     lab_encod = LabelEncoder()
